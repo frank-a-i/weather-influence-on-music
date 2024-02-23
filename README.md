@@ -25,10 +25,10 @@ Have a look at the [project description](PROJECT.md) for further details.
 
 The code is in a stage of *proof of concept*. Meaning:
 
-- essential unit- or integration-testing has not been carried out
+- essential unit- or integration-testing has not been carried out.
 - only a limited amount of data has been utilized for evaluation. 
 - the application has been excuted under various conditions, though it cannot be guaranteed bugs or crashes won't occur.
-- an holistic architecture
+- an holistic architecture.
 
 It has been successfully executed on Windows11 and Debian12
 
@@ -46,7 +46,7 @@ In the user interface a user can
 4. get some matching examples from the dataset. 
 
 **Note**: with the provided data in this repo one can already start the user interface with all features. No preparations like training are necessary for this. If you would like to run the steps on your own, you need to provide Spotify API 
-credentials, as the ones in the code have been deactivated.
+credentials, as the ones in the code have been deactivated. Depending on your machine all steps require ~ 1 day processing time.
 
 Below is an overview of the individual parts and how to interact with them
 
