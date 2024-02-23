@@ -1,14 +1,25 @@
 # Weather influence on music
 
-This is a concept study, that works out what music preferences an individual likes to listen, according to their surrounding weather condition. 
+This is a concept study, that works out what music preferences an individual likes to listen to, stimulated to their surrounding weather condition. 
+
+<img src="./analytics/example.png" alt="Example output" style="width:40%;"/>
+
+## Table of contents
+
+- [Weather influence on music](#weather-influence-on-music)
+    - [Concept](#concept)
+    - [State of implementation](#state-of-implementation)
+    - [Application](#application)
+        - [Initial setup](#initial-setup)
+        - [User Interface](#user-interface)
+        - [SurveyHandling](#surveyhandling)
+        - [SongAttributes](#songattributes)
+        - [WeatherRequests](#weatherrequests)
+        - [RelationAnalytics](#relationanalytics)
 
 ## Concept
 
-The [Million Musical Tweets Dataset](http://www.cp.jku.at/datasets/MMTD/) composed by the University of Linz gathered many broadcasted messages of individual, what they are listening to. Along the title and data, there's also given the location, date and time.
-
-This information then can be used to look up historical meterological data with the help of [Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api/).
-
-These two data sources, are yet not enough. In order to give more general estimates, a third one is required describing these songs. As each individual usually comes with a different taste in music, it's rather difficult to directly take these titles as a learning target. Though if the music attributes can be described on a more abstract level, this information could then be taken to look up suggestions in the scope of the individual's preferences. That's where the [Spotify API](https://developer.spotify.com/documentation/web-api) comes in handy, that provides information like how *danceable* or *speechy* a track is.
+Have a look at the [project description](PROJECT.md) for further details.
 
 ## State of implementation
 
@@ -34,7 +45,8 @@ In the user interface a user can
 3. receive suggestions what kind of music would be appropriate.
 4. get some matching examples from the dataset. 
 
-**Note**: with the provided data in this repo one can already start the user interface with all features. No preparations like training are necessary for this.
+**Note**: with the provided data in this repo one can already start the user interface with all features. No preparations like training are necessary for this. If you would like to run the steps on your own, you need to provide Spotify API 
+credentials, as the ones in the code have been deactivated.
 
 Below is an overview of the individual parts and how to interact with them
 
