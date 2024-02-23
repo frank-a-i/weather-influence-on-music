@@ -23,12 +23,7 @@ Have a look at the [project description](PROJECT.md) for further details.
 
 ## State of implementation
 
-The code is in a stage of *proof of concept*. Meaning:
-
-- essential unit- or integration-testing has not been carried out.
-- only a limited amount of data has been utilized for evaluation. 
-- the application has been excuted under various conditions, though it cannot be guaranteed bugs or crashes won't occur.
-- an holistic architecture.
+The code is in a stage of *proof of concept*.
 
 It has been successfully executed on Windows11 and Debian12
 
@@ -36,7 +31,7 @@ It has been successfully executed on Windows11 and Debian12
 
 There are mainly two parts:
 - one for data aquisition, training and general preparation. 
-- and the other for with the user interface
+- and the other for the demo with user interface and interatction.
 
 In the user interface a user can 
 
@@ -54,7 +49,7 @@ Below is an overview of the individual parts and how to interact with them
 
 After the repo has been cloned locally, the required python packages need to be installed that are summarized in the `packages.txt`. 
 
-**Note**: it is recommended to work with a particular virtual environment on that matter.
+**Note**: it is recommended to work with a dedicated virtual environment on that matter.
 
 ```
 python3 -m pip install -r packages.txt
