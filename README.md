@@ -2,11 +2,14 @@
 
 This is a concept study, that works out what music preferences an individual likes to listen to, stimulated to their surrounding weather condition. 
 
-<img src="./analytics/example.png" alt="Example output" style="width:40%;"/>
+<img src="./doc_assets/example.png" alt="Example output" style="width:40%;"/>
 
 ## Table of contents
 
+<!-- TOC -->
+
 - [Weather influence on music](#weather-influence-on-music)
+    - [Table of contents](#table-of-contents)
     - [Concept](#concept)
     - [State of implementation](#state-of-implementation)
     - [Application](#application)
@@ -16,6 +19,9 @@ This is a concept study, that works out what music preferences an individual lik
         - [SongAttributes](#songattributes)
         - [WeatherRequests](#weatherrequests)
         - [RelationAnalytics](#relationanalytics)
+    - [File Description](#file-description)
+
+<!-- /TOC -->
 
 ## Concept
 
@@ -124,3 +130,32 @@ Requires
 
 Exports:
 - a set of regressors (*clfs.p*)
+
+## File Description
+
+The repo contains following files
+
+| File                              | Description                                                   |
+|-----------------------------------|---------------------------------------------------------------|
+| analytics/artist_distribution.png | What artists are presend in the survey dataset (graph)        |
+| analytics/artist_distribution.csv | What artists are present in the survey dataset (data)         |
+| analytics/country_distribution.png| From where in the world the training samples have been extracted |
+| analytics/general_country_distribution.png | From where in the world samples generally could be extracted |
+| analytics/date_distribution.csv   | What dates are present in the survey dataset                  |
+| analytics/feature_importance_*.png | What weather feature is important for each regressor          |
+| analytics/how_much_data_is_missing.csv | Overview about missing values in the dataset             |
+| analytics/song_descriptor_distribution_* | How the samples are distributed within the individual features |
+| analytics/weather_descriptor_distribution_* | How the weather features are distributed for the related samples |
+| dataset/                          | Export directory, where the raw survey data is exported to    |
+| doc_assets/                       | Directory with images especially for integration into documents |
+| pipelines/common.py               | A central configuration of commonly shared variables & functions |
+| pipelines/SurveyHandling.py       | Downloads the survey data and turns it into a DataFrame       |
+| pipelines/SongAttributes.py       | Takes the songs from survey and looks up the Spotify features |
+| pipelines/WeatherRequests.py      | Takes the date & location of survey sampels and looks up meterological data |
+| pipelines/RelationAnalytics.py    | Combines all data, analyses and trains the regressors         |
+| states/*                          | Export directory with pickle files to save intermediate states|
+| UI/                               | Flask / Web User interface of the application demonstrator    |
+| web_interface.py                  | Entry point to start the demonstrator above                   |
+| packages.txt                      | List of python packages in order to run the scripts           |
+| README.md                         | You are currently reading this file                           |
+| PROJECT.md                        | Project description, ideas and discussion                     |
